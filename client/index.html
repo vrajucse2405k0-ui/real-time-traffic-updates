@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navigation App 🚗</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="controls">
+    <input type="text" id="end" placeholder="Enter Destination" onkeyup="suggestPlaces()">
+    <div id="suggestions"></div>
+    <button onclick="getRoute()">Start Navigation</button>
+</div>
+
+<!-- 🧭 NAV UI -->
+<div id="navUI">
+    <div id="arrow">⬆️</div>
+    <div id="navText">Start navigation</div>
+</div>
+
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

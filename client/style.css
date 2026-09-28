@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+#map {
+    height: 100vh;
+}
+
+.controls {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 260px;
+}
+
+.controls input {
+    width: 100%;
+    padding: 8px;
+}
+
+.controls button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+#suggestions {
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.suggestion-item {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background: #eee;
+}
+
+/* 🧭 NAV UI */
+#navUI {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2000;
+    background: white;
+    padding: 12px;
+    border-radius: 12px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+#arrow {
+    font-size: 40px;
+    transition: transform 0.3s linear;
+}
+
+#navText {
+    font-size: 14px;
+}
