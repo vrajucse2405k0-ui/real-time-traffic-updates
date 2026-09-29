@@ -164,3 +164,7 @@ function checkNavigation() {
             `${formatDistance(dist)} • ${step.text}`;
     }
 }
+function clearDestination() {
+    document.getElementById("end").value = "";
+    document.getElementById("suggestions").innerHTML = "";
+}
